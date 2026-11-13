@@ -13,8 +13,10 @@ imprimir_numero:
 .bucle_div:
     xor dx,dx
     div bx
+
     push dx
     inc cx
+
     cmp ax,0
     jne .bucle_div
 
